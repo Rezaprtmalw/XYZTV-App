@@ -4,7 +4,9 @@
     <application
         android:label="XYZ TV"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-        <activity android:name=".PlayerActivity" />
+        <activity
+    android:name=".PlayerActivity"
+    android:exported="true" />
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
