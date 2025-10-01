@@ -1,20 +1,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xyz.iptv">
 
+    <!-- Permission harus di sini -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:label="XYZ TV"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
         <activity
-    android:name=".PlayerActivity"
-    android:exported="true" />
-        <activity android:name=".MainActivity"
+            android:name=".PlayerActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-    </application>
-   <uses-permission android:name="android.permission.INTERNET" /> 
 
+    </application>
 </manifest>
